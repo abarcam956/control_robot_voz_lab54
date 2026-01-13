@@ -10,7 +10,7 @@ def main():
     ventana, canvas, temp, prox, energia, texto_label, resultado_label, estado_label = crear_ventana()
 
     def ejecutar_reconocimiento():
-        texto_label.config(text="🎤 Escuchando... (5s)")
+        texto_label.config(text="🎤 Escuchando... (4s)")
         ventana.update()
 
         texto, audio_data = escuchar()
