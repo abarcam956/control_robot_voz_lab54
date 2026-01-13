@@ -1,4 +1,3 @@
-# modules/command_processor.py
 def procesar_comando(text, canvas, sensores, resultado_label, estado_label, 
                      ventana, autorizado: bool):
     temp, prox, energia = sensores
