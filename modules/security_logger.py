@@ -1,4 +1,3 @@
-# modules/security_logger.py
 from datetime import datetime
 
 def registrar_evento(texto: str, similitud: float, autorizado: bool, comando: str):
