@@ -1,4 +1,3 @@
-# modules/gui_manager.py
 import tkinter as tk
 
 def crear_ventana():
@@ -33,7 +32,7 @@ def crear_ventana():
                           font=("Arial", 12), bg="#1e1e1e", fg="white")
     texto_label.pack(pady=10)
 
-    # Estado seguridad (NUEVO)
+    # Estado seguridad
     estado_label = tk.Label(ventana, text="🔐 Esperando verificación...", 
                            font=("Arial", 14, "bold"), bg="#1e1e1e", fg="orange")
     estado_label.pack(pady=5)
