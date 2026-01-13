@@ -1,3 +1,6 @@
-vosk
 sounddevice
-tk
+numpy
+scipy
+vosk
+librosa
+matplotlib
