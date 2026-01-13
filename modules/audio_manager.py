@@ -1,18 +1,19 @@
-# modules/audio_manager.py
 from vosk import Model, KaldiRecognizer
 import sounddevice as sd
 import json
 import numpy as np
 
-samplerate = 16000
+SAMPLERATE = 16000
 model = Model("vosk-model-small-es-0.42")
-recognizer = KaldiRecognizer(model, samplerate)
+recognizer = KaldiRecognizer(model, SAMPLERATE)
 
 def escuchar():
-    """Graba 5s y devuelve (texto, audio_crudo)."""
-    print("🎤 Grabando...")
-    audio = sd.rec(int(5 * samplerate), samplerate=samplerate,
-                   channels=1, dtype='int16')
+    """Graba 4s y devuelve (texto, audio_crudo_int16)."""
+    print("   🎤 Grabando... (4 segundos)")
+    audio = sd.rec(int(4 * SAMPLERATE),
+                   samplerate=SAMPLERATE,
+                   channels=1,
+                   dtype='int16')
     sd.wait()
     
     # Reconocimiento Vosk
